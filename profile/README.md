@@ -5,34 +5,42 @@
 
 TaskMapr provides React components and AI agent integration tools that bring Cursor-like experiences to websites and web apps.
 
-## 🚀 Projects
+## Projects
 
 ### [@taskmapr/ui-overlay](https://github.com/taskmapr/ui-overlay)
-A React overlay component with built-in chat, UI highlighting, and guided walkthroughs. Think "Cursor for websites."
-
-**Features:**
-- 💬 Self-contained chat overlay
-- 🎯 Element highlighting by ID or keywords
-- 🗺️ Interactive guided walkthroughs
-- 🤖 AI agent integration (OpenAI, Swarm, custom backends)
-- 📘 Full TypeScript support
-- 🎨 Beautiful dark theme UI
+React overlay component with built-in chat, UI highlighting, and guided walkthroughs.
 
 ```bash
 npm install @taskmapr/ui-overlay
 ```
 
-## 🛠️ Tech Stack
+**Features:**
+- Self-contained chat overlay
+- Element highlighting by ID or keywords
+- Interactive guided walkthroughs
+- AI agent integration (OpenAI Agents SDK, Swarm, custom backends)
+- Full TypeScript support
+- Beautiful dark theme UI
+
+### [taskmapr/orchestrator](https://github.com/taskmapr/orchestrator)
+FastAPI backend for AI agent orchestration with OpenAI Agents SDK, Supabase persistence, and rich contextual awareness.
+
+**Features:**
+- OpenAI Agents SDK integration with reasoning and tool use
+- Rich context from DOM elements, page state, and navigation
+- SSE streaming with real-time typed events
+- Supabase integration for persistent conversation history
+- MCP tools for extensible domain-specific workflows
+- JWT authentication via Supabase token verification
+
+## Tech Stack
 
 - **Frontend:** React, TypeScript, Tailwind CSS
+- **Backend:** FastAPI, Python, Supabase
 - **AI Integration:** OpenAI Agents SDK, Swarm
 - **Build:** Vite, Rollup
 
-## 🤝 Contributing
-
-We welcome contributions! Check out individual repositories for contribution guidelines.
-
-## 📄 License
+## License
 
 All TaskMapr projects are MIT licensed unless otherwise specified.
 
