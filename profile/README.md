@@ -1,5 +1,4 @@
 # TaskMapr
-[![Backed by MIT Sandbox Venture Fund](https://img.shields.io/badge/Backed_by-MIT_Sandbox-A31F34.svg)](https://innovation.mit.edu/entrepreneurship-2/mit-sandbox-innovation-fund/)
 
 **Cursor-style AI assistants for your web applications**
 
