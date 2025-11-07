@@ -36,6 +36,16 @@ FastAPI backend for AI agent orchestration with OpenAI Agents SDK, Supabase pers
 - MCP tools for extensible domain-specific workflows
 - JWT authentication via Supabase token verification
 
+## Architecture at a Glance
+
+```mermaid
+flowchart LR
+    A[TaskMapr UI Overlay<br/>@taskmapr/ui-overlay] -->|Actions & Context| B(TaskMapr Orchestrator<br/>FastAPI)
+    B -->|Streaming Responses| A
+    B -->|Persistence| C[(Supabase)]
+    B -->|Tool Calls| D[(MCP / External Systems)]
+```
+
 ## Tech Stack
 
 - **Frontend:** React, TypeScript, Tailwind CSS
