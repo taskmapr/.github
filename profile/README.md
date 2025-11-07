@@ -56,7 +56,7 @@ flowchart LR
 ## Quick Start
 
 ```bash
-# 1. Install the overlay package for your React app
+# 1. Install the overlay package in your React app
 npm install @taskmapr/ui-overlay
 
 # 2. Clone & run the orchestrator backend
@@ -64,6 +64,24 @@ git clone https://github.com/taskmapr/orchestrator.git
 cd orchestrator
 pip install -r requirements.txt
 uvicorn app.server:app --reload --port 8000
+```
+
+```tsx
+// 3. Create the TaskMapr client in your React code
+import { TaskMaprProvider, createTaskMaprClient } from '@taskmapr/ui-overlay';
+
+const taskmapr = createTaskMaprClient('http://localhost:8000', {
+  orchestrator: {
+    orchestrator: {
+      orchestrator: 'http://localhost:8000/api/taskmapr/orchestrate',
+    },
+  },
+});
+
+// Wrap your app (details vary—see overlay README)
+<TaskMaprProvider client={taskmapr}>
+  <App />
+</TaskMaprProvider>
 ```
 
 That’s the high-level flow—refer to each project’s README for environment variables, auth configuration, and deeper setup instructions.
