@@ -53,6 +53,21 @@ flowchart LR
 - **AI Integration:** OpenAI Agents SDK, Swarm
 - **Build:** Vite, Rollup
 
+## Quick Start
+
+```bash
+# 1. Install the overlay package for your React app
+npm install @taskmapr/ui-overlay
+
+# 2. Clone & run the orchestrator backend
+git clone https://github.com/taskmapr/orchestrator.git
+cd orchestrator
+pip install -r requirements.txt
+uvicorn app.server:app --reload --port 8000
+```
+
+That’s the high-level flow—refer to each project’s README for environment variables, auth configuration, and deeper setup instructions.
+
 ## License
 
 All TaskMapr projects are MIT licensed unless otherwise specified.
