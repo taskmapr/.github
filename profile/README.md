@@ -20,6 +20,7 @@ npm install @taskmapr/ui-overlay
 - Element highlighting by ID or keywords
 - Interactive guided walkthroughs
 - AI agent integration (OpenAI Agents SDK, Swarm, custom backends)
+- Expanded chat composer with smarter autosizing
 - Full TypeScript support
 - Beautiful dark theme UI
 
@@ -29,6 +30,7 @@ FastAPI backend for AI agent orchestration with OpenAI Agents SDK, Supabase pers
 **Features:**
 - OpenAI Agents SDK integration with reasoning and tool use
 - Rich context from DOM elements, page state, and navigation
+- Built-in knowledge tools that expose curated markdown briefs
 - SSE streaming with real-time typed events
 - Supabase integration for persistent conversation history
 - MCP tools for extensible domain-specific workflows
